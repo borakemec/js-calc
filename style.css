@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Roboto Light';
+    src: url("fonts/Roboto-Light.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #ededed;
+}
+
+.outline {
+    margin-top: 75px;
+    width: 400px;
+    height: 600px;
+    border: 1px solid #1e1e1e;
+    border-radius: 10px;
+    background-color: #959595;
+}
+
+.screen {
+    background-color: #6a6a6a;
+    width: 400px;
+    height: 100px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: right;
+}
+
+.screen-text {
+    color: white;
+    font-family: "Roboto Light";
+    font-size: 50px;
+    margin-right: 20px;
+    padding-top: 30px;
+}
+
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #8e8e8e;
+    width: 400px;
+    height: 500px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.button {
+    height: 98px;
+    width: 98px;
+    background-color: #9c9c9c;
+    border: 1px solid rgba(44, 44, 44, 0.47);
+    font-size: 30px;
+    font-family: "Roboto Light";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button.zero {
+    width: 198px;
+    border-bottom-left-radius: 10px;
+}
+
+.button.equals {
+    border-bottom-right-radius: 10px;
+}
+
+.divide, .plus, .minus, .multiply, .equals {
+    background-color: #ffa600;
+}
+
+.button.divide:hover, .button.plus:hover, .button.minus:hover, .button.multiply:hover, .button.equals:hover {
+    background-color: #9a6a00;
+}
+
+.button.delete, .button.percent, .button.sign {
+    background-color: #777777;
+}
+
+.button:hover {
+    filter: brightness(125%);
+}
+
+p {
+    color: white;
+}
